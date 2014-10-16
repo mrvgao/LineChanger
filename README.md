@@ -2,9 +2,9 @@
 # LineChanger
 ===========
 ## What's this?
-A Plugin written by Python that could added four new command in Vim to Change line easily.
+A Plugin written by Python that could be added four new command in Vim to Change line easily.
 
-Notice: These Commands all are be Surpputed in the "Insert Mode" and "Nore Mode"
+Notice: These Commands all are be supported in the "Insert Mode" and "Normal Mode"
 
 ## What's Include?
 1. &lt;C-j> *move* the line down.: Ctrl-j
