@@ -36,6 +36,7 @@ class LineChanger:
       vim.command("nmap <C-k> :python LineChanger().takeTheLineUp()<CR><Up>")
       vim.command("imap <C-k> <Esc>:python LineChanger().takeTheLineUp()<CR><Up>i<Right>")
       vim.command("nmap <c-u> :python LineChanger().takeTheLineDoubleDown()<CR><Down><C-e>")   
+      vim.command("nmap <c-d> :python LineChanger().takeTheLineDoubleDown()<CR>")
     except Exception,e:
       print e
 pythonEnd
@@ -43,6 +44,6 @@ pythonEnd
 "Change The unuseful Captial W to the lower w
  
 python LineChanger().makeMap()
-nmap <c-j> :python LineChanger().takeTheLineDoubleDown()<CR> 
+
  
  
