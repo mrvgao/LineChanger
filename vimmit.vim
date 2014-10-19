@@ -31,12 +31,12 @@ class LineChanger:
 
   def makeMap(self):
     try:
-      vim.command("nmap <C-j> :python LineChanger().takeTheLineDown()<CR><Down>")
+      #vim.command("nmap <C-j> :python LineChanger().takeTheLineDown()<CR><Down>")
       vim.command("imap <C-j> <Esc>:python LineChanger().takeTheLineDown()<CR><Down>i<Right>")
-      vim.command("nmap <C-k> :python LineChanger().takeTheLineUp()<CR><Up>")
+      #vim.command("nmap <C-k> :python LineChanger().takeTheLineUp()<CR><Up>")
       vim.command("imap <C-k> <Esc>:python LineChanger().takeTheLineUp()<CR><Up>i<Right>")
-      vim.command("nmap <c-u> :python LineChanger().takeTheLineDoubleDown()<CR><Down><C-e>")   
-      vim.command("nmap <c-d> :python LineChanger().takeTheLineDoubleDown()<CR>")
+      vim.command("imap <c-u> :python LineChanger().takeTheLineDoubleDown()<CR><Down><C-e>")   
+      vim.command("imap <c-d> :python LineChanger().takeTheLineDoubleDown()<CR>")
     except Exception,e:
       print e
 pythonEnd

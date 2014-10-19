@@ -3,7 +3,7 @@
 ## What's this?
 A Plugin written by Python that could be added four new command in Vim to Change line easily.
 
-**Notice**: These Commands all are be supported in the "Insert Mode" and "Normal Mode"
+**Notice**: These Commands all are be supported in the "Insert Mode". At beginning, I made those commands could be used in "noremal-mode" too, but I find will confused with other commands. And when we use those command, we usuall are in the "Insert mode", so , I delete the function in "noremal-model".
 A Vim Plugin written by Python that could be added four new command in Vim to Change line easily.
 
 ## What's Include?
